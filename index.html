@@ -3,24 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      styles.css;
+    </script>
+    <script>
+      styles.js;
+    </script>
     <title>Converter</title>
   </head>
-  <script>
-    // define variables
-    let topMiles = document.getElementById("topMiles");
-    let bottomKm = document.getElementById("bottomKm");
-    let rate;
-    // create function to convert miles to kilometer
-    function solveBottomKm(topMilesValue, rate = "1.6") {
-      bottomKm.value = topMiles.value * rate;
-    }
-    // create function to convert kilometers to miles
-    function solveTopMiles(kmBottomValue, rate = "0.625") {
-      topMiles.value = bottomKm.value * rate;
-    }
-  </script>
+
   <body>
-    <div>
+    <div id="main" class="flex bg-slate-200 w-full h-full mx-auto">
       <!-- input field for miles value -->
       <input
         name="topMiles"
